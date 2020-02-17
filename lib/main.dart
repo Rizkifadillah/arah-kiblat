@@ -3,25 +3,7 @@ import 'package:compasstools/compasstools.dart';
 import 'package:flutter/services.dart';
 import 'dart:ui' as prefix0;
 
-//void main(){
-//  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
-//      .then((_){
-//    runApp(MyApp());
-//  });
-//}
-
 void main() => runApp(MyApp());
-//void main() async {
-//  ///
-//  /// Force the layout to Portrait mode
-//  ///
-//  await SystemChrome.setPreferredOrientations([
-//    DeviceOrientation.portraitUp,
-//    DeviceOrientation.portraitDown
-//  ]);
-//
-//  runApp(new MyApp());
-//}
 
 class MyApp extends StatefulWidget {
   @override
@@ -87,8 +69,6 @@ class _MyAppState extends State<MyApp> {
           child: Stack(
             children: <Widget>[
               Container(
-//                height: MediaQuery.of(context).size.height,
-//                width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(
                     image: DecorationImage(
                         image: AssetImage("assets/bg.jpg"),fit:BoxFit.cover)
@@ -102,7 +82,6 @@ class _MyAppState extends State<MyApp> {
                   ),
                 ),
               ),
-//              Image.asset("img/bgcompas.jpg"),
               Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
@@ -138,10 +117,6 @@ class _MyAppState extends State<MyApp> {
                                     ],
                                   ),
                                 ),
-//                                Padding(
-//                                  padding: const EdgeInsets.only(top:98.0),
-//                                  child: Center(child: Image.asset("assets/kaba.png")),
-//                                ),
                           ),
                         );
                       }
@@ -154,9 +129,7 @@ class _MyAppState extends State<MyApp> {
                           ),);
                     },
                   ),
-                  Text("Arah Kiblat "
-//                      +sensorType
-                      ,
+                  Text("Arah Kiblat ",
                       style: TextStyle(
                           fontSize: 24,
                           fontWeight: FontWeight.w700,
